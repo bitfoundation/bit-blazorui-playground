@@ -1,0 +1,15 @@
+﻿@page "/"
+
+<PageTitle>Bit Components Playground</PageTitle>
+
+<BitButton Class="sample-button" OnClick="IncreaseCounter">Bit Blazor UI is @Text x @Counter!</BitButton>
+
+@code {
+    string Text = "Awsome";
+    int Counter = 1;
+
+    void IncreaseCounter()
+    {
+        Counter++;
+    }
+}

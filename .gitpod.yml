@@ -1,0 +1,9 @@
+image: gitpod/workspace-dotnet
+
+ports:
+  - port: 5001
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - ms-dotnettools.vscode-dotnet-runtime
