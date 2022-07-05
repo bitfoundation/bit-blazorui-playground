@@ -5,8 +5,6 @@ builder.Services.AddServerSideBlazor();
 
 var app = builder.Build();
 
-app.UseHttpsRedirection();
-
 app.UseStaticFiles();
 
 app.UseRouting();
