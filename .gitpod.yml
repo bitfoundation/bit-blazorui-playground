@@ -1,7 +1,7 @@
 image: gitpod/workspace-dotnet
 
 ports:
-  - port: 5001
+  - port: 5000
     onOpen: open-preview
 
 vscode:
