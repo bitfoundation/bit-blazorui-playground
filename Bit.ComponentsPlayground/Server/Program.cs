@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.ResponseCompression;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.WebHost.UseUrls("http://localhost:5000");
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
