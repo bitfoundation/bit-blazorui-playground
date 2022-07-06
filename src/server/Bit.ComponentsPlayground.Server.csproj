@@ -11,8 +11,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Client\Bit.ComponentsPlayground.Client.csproj" />
-    <ProjectReference Include="..\Shared\Bit.ComponentsPlayground.Shared.csproj" />
+    <ProjectReference Include="..\client\Bit.ComponentsPlayground.Client.csproj" />
+    <ProjectReference Include="..\shared\Bit.ComponentsPlayground.Shared.csproj" />
   </ItemGroup>
 
 

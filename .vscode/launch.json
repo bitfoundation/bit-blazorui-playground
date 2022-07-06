@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/Bit.ComponentsPlayground/Server/bin/Debug/net6.0/Bit.ComponentsPlayground.Server.dll",
+            "program": "${workspaceFolder}/src/server/bin/Debug/net6.0/Bit.ComponentsPlayground.Server.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
