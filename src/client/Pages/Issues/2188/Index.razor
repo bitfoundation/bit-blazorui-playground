@@ -1,0 +1,18 @@
+﻿@page "/issues/2188"
+
+@using System.Globalization
+@using System.Reflection
+
+<PageTitle>Bit Components Playground</PageTitle>
+
+<BitDatePicker @bind-Value="SelectedDate" GoToToday="برو به امروز" Style="width: 300px" FormatDate="yyyy/MM/dd hh:mm tt" Culture="Bit.ComponentsPlayground.Client.Pages.CultureInfoHelper.GetFaIrCultureByFarsiNames()"></BitDatePicker>
+
+<BitDatePicker @bind-Value="SelectedDate" GoToToday="برو به امروز" Style="width: 300px" FormatDate="yyyy/MM/dd hh:mm tt" Culture="Bit.ComponentsPlayground.Client.Pages.CultureInfoHelper.GetFaIrCultureByFingilishNames()"></BitDatePicker>
+
+<hr />
+
+@SelectedDate?.Date.ToLongDateString()
+
+@code {
+    DateTimeOffset? SelectedDate = new DateTime(1992, 8, 7);
+}
