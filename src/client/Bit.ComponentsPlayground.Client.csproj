@@ -13,7 +13,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Shared\Bit.ComponentsPlayground.Shared.csproj" />
-		<PackageReference Include="Bit.BlazorUI" Version="2.0.0-pre-01" />
+		<PackageReference Include="Bit.BlazorUI" Version="2.0.0" />
 		<Using Include="Bit.BlazorUI" />
 	</ItemGroup>
 
