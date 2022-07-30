@@ -9,6 +9,8 @@
 
 <BitDatePicker @bind-Value="SelectedDate" GoToToday="برو به امروز" Style="width: 300px" FormatDate="yyyy/MM/dd hh:mm tt" Culture="Bit.ComponentsPlayground.Client.Pages.CultureInfoHelper.GetFaIrCultureByFingilishNames()"></BitDatePicker>
 
+<BitDatePicker @bind-Value="SelectedDate" GoToToday="برو به امروز" Style="width: 300px" FormatDate="yyyy/MM/dd hh:mm tt" Culture="Bit.ComponentsPlayground.Client.Pages.AppCultureInfoHelper.GetFaIrCultureByFarsiNames()"></BitDatePicker>
+
 <hr />
 
 @SelectedDate?.Date.ToLongDateString()
