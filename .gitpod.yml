@@ -7,3 +7,6 @@ ports:
 vscode:
   extensions:
     - ms-dotnettools.vscode-dotnet-runtime
+    - ms-dotnettools.blazorwasm-companion
+    - kevin-chatham.aspnetcorerazor-html-css-class-completion
+    - ms-dotnettools.csdevkit
