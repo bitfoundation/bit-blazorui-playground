@@ -9,3 +9,18 @@
 
     <Footer />
 </main>
+
+@code {
+
+    [Inject] private IJSRuntime _js { get; set; }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            BitThemeManager.init(_js);
+            var myTheme = new BitTheme();
+            BitThemeManager.ApplyBitTheme(myTheme);
+        }
+    }
+}

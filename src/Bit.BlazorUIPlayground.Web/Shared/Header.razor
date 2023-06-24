@@ -2,6 +2,7 @@
 
 @code {
     private string CurrentUrl = string.Empty;
+    private bool IsThemingToggle;
 
     protected override void OnInitialized()
     {
@@ -16,14 +17,23 @@
         CurrentUrl = _navigationManager.Uri.Replace(_navigationManager.BaseUri, "/", StringComparison.Ordinal);
         StateHasChanged();
     }
+
+    private async Task OnChangeThem()
+    {
+        IsThemingToggle = !IsThemingToggle;
+        await BitThemeManager.ToggleDarkLight();
+    }
 }
 
 <header>
-    <div class="container">
+    <div class="container bit-css-clr-bg-primary">
         <div class="content">
             <BitLink Class="logo" Href="/" aria-label="Home page" />
             <BitLink Class="@($"link {(CurrentUrl == "/" ? "active" : string.Empty)}")" Href="/">Home</BitLink>
             <BitLink Class="@($"link {(CurrentUrl == "/about" ? "active" : string.Empty)}")" Href="/about">About</BitLink>
+        </div>
+        <div class="right-section">
+            <BitIconButton IconName="@(IsThemingToggle ? BitIconName.Sunny : BitIconName.ClearNight)" OnClick="OnChangeThem" />
         </div>
     </div>
 </header>
