@@ -154,7 +154,6 @@
     box-sizing: border-box;
     color: #1A2027;
     transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    background-color: var(--bit-clr-bg-primary);
 }
 
 .values-section .value-card-title {
@@ -168,7 +167,6 @@
     box-sizing: border-box;
     background-position: center left;
     background-repeat: no-repeat;
-    color: var(--bit-clr-fg-primary);
 }
 
 .values-section .value-card-desc {
