@@ -45,13 +45,14 @@
 ::deep .link {
     height: 100%;
     padding: 1rem;
-    box-sizing: border-box;
-    line-height: 1.5;
-    color: #515151;
     text-decoration: none;
     cursor: pointer;
+    font-size: 1rem;
+    box-sizing: border-box;
+    color: var(--bit-clr-fg-secondary);
 }
 
     ::deep .link.active {
-        color: #0064EF;
+        color: var( --bit-clr-primary-main);
+        font-weight: 600;
     }
