@@ -9,17 +9,3 @@
         </LayoutView>
     </NotFound>
 </Router>
-
-
-@code {
-
-    [Inject] private IJSRuntime _js { get; set; }
-
-    protected override void OnAfterRender(bool firstRender)
-    {
-        if (firstRender)
-        {
-            BitThemeManager.Init(_js);
-        }
-    }
-}
