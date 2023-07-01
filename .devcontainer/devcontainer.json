@@ -1,0 +1,54 @@
+{
+    "hostRequirements": {
+        "cpus": 2
+    },
+    "waitFor": "onCreateCommand",
+    "postCreateCommand": "dotnet build",
+    "postAttachCommand": {
+        "server": "dotnet watch run --project ./src/Bit.BlazorUIPlayground.Web/"
+    },
+    "customizations": {
+        "codespaces": {
+            "openFiles": [
+                "src/Bit.BlazorUIPlayground.Web/Pages/Home.razor"
+            ]
+        },
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.vscode-dotnet-runtime",
+                "kevin-chatham.aspnetcorerazor-html-css-class-completion",
+                "ms-dotnettools.csdevkit"
+            ]
+        }
+    },
+    "portsAttributes": {
+        "4000": {
+            "label": "Application",
+            "onAutoForward": "openPreview"
+        }
+    },
+    "forwardPorts": [
+        4000
+    ],
+    "build": {
+        "dockerfile": "./Dockerfile",
+        "context": "."
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": "true",
+            "username": "vscode",
+            "userUid": "1000",
+            "userGid": "1000",
+            "upgradePackages": "true"
+        },
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "none"
+        },
+        "ghcr.io/devcontainers/features/git:1": {
+            "version": "latest",
+            "ppa": "false"
+        }
+    },
+    "remoteUser": "vscode"
+}
