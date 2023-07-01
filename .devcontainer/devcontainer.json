@@ -2,13 +2,10 @@
 	"name": "Bit Blazor UI Playground",
 	"image": "mcr.microsoft.com/devcontainers/dotnet:0-7.0",
     "hostRequirements": {
-      "cpus": 2
+      "cpus": 4
     },
     "waitFor": "onCreateCommand",
     "postCreateCommand": "dotnet build",
-    "postAttachCommand": {
-      "server": "dotnet watch run --project ./src/Bit.BlazorUIPlayground.Web/"
-    },
     "customizations": {
         "codespaces": {
             "openFiles": [
