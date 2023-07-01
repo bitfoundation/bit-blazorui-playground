@@ -1,0 +1,31 @@
+{
+	"name": "Bit Blazor UI Playground",
+	"image": "mcr.microsoft.com/devcontainers/dotnet:0-7.0",
+    "hostRequirements": {
+      "cpus": 4
+    },
+    "waitFor": "onCreateCommand",
+    "postCreateCommand": "dotnet build",
+    "customizations": {
+        "codespaces": {
+            "openFiles": [
+                "src/Bit.BlazorUIPlayground.Web/Pages/Home.razor"
+            ]
+        },
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.vscode-dotnet-runtime",
+                "kevin-chatham.aspnetcorerazor-html-css-class-completion",
+                "ms-dotnettools.csdevkit"
+            ]
+        }
+    },
+    "portsAttributes": {
+      "4000": {
+        "label": "Application",
+        "onAutoForward": "openPreview"
+      }
+    },
+    "forwardPorts": [4000]
+  }
+  
