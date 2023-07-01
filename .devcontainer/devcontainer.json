@@ -1,11 +1,13 @@
 {
+	"name": "Bit Blazor UI Playground",
+	"image": "mcr.microsoft.com/devcontainers/dotnet:0-7.0",
     "hostRequirements": {
-        "cpus": 2
+      "cpus": 2
     },
     "waitFor": "onCreateCommand",
     "postCreateCommand": "dotnet build",
     "postAttachCommand": {
-        "server": "dotnet watch run --project ./src/Bit.BlazorUIPlayground.Web/"
+      "server": "dotnet watch run --project ./src/Bit.BlazorUIPlayground.Web/"
     },
     "customizations": {
         "codespaces": {
@@ -22,33 +24,11 @@
         }
     },
     "portsAttributes": {
-        "4000": {
-            "label": "Application",
-            "onAutoForward": "openPreview"
-        }
+      "4000": {
+        "label": "Application",
+        "onAutoForward": "openPreview"
+      }
     },
-    "forwardPorts": [
-        4000
-    ],
-    "build": {
-        "dockerfile": "./Dockerfile",
-        "context": "."
-    },
-    "features": {
-        "ghcr.io/devcontainers/features/common-utils:2": {
-            "installZsh": "true",
-            "username": "vscode",
-            "userUid": "1000",
-            "userGid": "1000",
-            "upgradePackages": "true"
-        },
-        "ghcr.io/devcontainers/features/node:1": {
-            "version": "none"
-        },
-        "ghcr.io/devcontainers/features/git:1": {
-            "version": "latest",
-            "ppa": "false"
-        }
-    },
-    "remoteUser": "vscode"
-}
+    "forwardPorts": [4000]
+  }
+  
