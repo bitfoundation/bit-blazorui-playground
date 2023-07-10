@@ -9,7 +9,7 @@
       "type": "coreclr",
       "request": "launch",
       "preLaunchTask": "build",
-      "program": "${workspaceFolder}/src/Bit.BlazorUIPlayground.Web/bin/Debug/net7.0/Bit.BlazorUIPlayground.Web.dll",
+      "program": "${workspaceFolder}/bin/Debug/net7.0/Bit.BlazorUIPlayground.dll",
       "args": [],
       "cwd": "${workspaceFolder}",
       "stopAtEntry": false,
