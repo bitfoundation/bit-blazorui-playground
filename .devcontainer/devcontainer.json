@@ -5,7 +5,7 @@
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
-  "postCreateCommand": "dotnet watch && sudo apt-get update && sudo apt-get install -y xdg-utils && xdg-open http://localhost:4000",
+  "onCreateCommand": "dotnet build",
   "customizations": {
     "codespaces": {
       "openFiles": [
@@ -16,7 +16,7 @@
       "extensions": [
         "ms-dotnettools.vscode-dotnet-runtime",
         "kevin-chatham.aspnetcorerazor-html-css-class-completion",
-        "ms-dotnettools.csdevkit"
+        "ms-dotnettools.csharp"
       ]
     }
   },
