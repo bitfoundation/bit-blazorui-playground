@@ -7,7 +7,7 @@
       "type": "process",
       "args": [
         "build",
-        "${workspaceFolder}/src/Bit.BlazorUIPlayground.Web/Bit.BlazorUIPlayground.Web.csproj",
+        "${workspaceFolder}/Bit.BlazorUIPlayground.csproj",
         "/property:GenerateFullPaths=true",
         "/consoleloggerparameters:NoSummary"
       ],
@@ -21,7 +21,7 @@
         "watch",
         "run",
         "--project",
-        "${workspaceFolder}/src/Bit.BlazorUIPlayground.Web/Bit.BlazorUIPlayground.Web.csproj"
+        "${workspaceFolder}/Bit.BlazorUIPlayground.csproj"
       ],
       "problemMatcher": "$msCompile"
     }

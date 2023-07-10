@@ -5,11 +5,11 @@
       "cpus": 4
     },
     "waitFor": "onCreateCommand",
-    "postCreateCommand": "dotnet build",
+    "postCreateCommand": "dotnet dev-certs https && dotnet build",
     "customizations": {
         "codespaces": {
             "openFiles": [
-                "src/Bit.BlazorUIPlayground.Web/Pages/Home.razor"
+                "welcome.txt"
             ]
         },
         "vscode": {
