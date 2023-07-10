@@ -1,3 +1,0 @@
-Welcome to the Bit BlazorUI Playground.
-
-You can start the project by pressing F5 key.
