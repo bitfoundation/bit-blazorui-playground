@@ -9,7 +9,7 @@
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "Pages/App.razor"
+        "Pages/Home.razor"
       ]
     },
     "vscode": {
