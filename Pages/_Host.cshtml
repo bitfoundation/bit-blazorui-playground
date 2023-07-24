@@ -1,17 +1,17 @@
 ﻿@page "/"
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @using Microsoft.AspNetCore.Components.Web
-@namespace Bit.BlazorUIPlayground.Pages
+@namespace Bit.BlazorUIPlayground.Web.Pages
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" use-system-theme>
 <head>
     <base href="~/" />
     <meta charset="utf-8" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="_content/Bit.BlazorUI/styles/bit.blazorui.min.css" />
-    <link rel="stylesheet" href="Bit.BlazorUIPlayground.styles.css" />
+    <link rel="stylesheet" href="Bit.BlazorUIPlayground.Web.styles.css" />
     <component type="typeof(HeadOutlet)" render-mode="Server" />
     <style>
         html, body {
