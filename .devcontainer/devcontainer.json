@@ -1,6 +1,6 @@
 {
   "name": "Bit Blazor UI Playground",
-  "image": "mcr.microsoft.com/devcontainers/dotnet:0-7.0",
+  "image": "mcr.microsoft.com/dotnet/nightly/sdk:8.0",
   "hostRequirements": {
     "cpus": 4
   },
