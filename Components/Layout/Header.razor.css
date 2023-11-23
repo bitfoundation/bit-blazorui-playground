@@ -27,7 +27,7 @@
     flex-flow: row nowrap;
 }
 
-.logo {
+::deep .logo {
     width: 2rem;
     height: 2rem;
     cursor: pointer;
@@ -35,7 +35,7 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('/images/bit-blue-icon.svg');
+    background-image: url('/bit-logo.svg');
 }
 
 ::deep .link {
