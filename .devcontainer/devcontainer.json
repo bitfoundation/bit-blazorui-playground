@@ -8,7 +8,7 @@
   "customizations": {
     "codespaces": {
       "openFiles": [
-        "Pages/Home.razor"
+        "Components/Pages/Home.razor"
       ]
     },
     "vscode": {
