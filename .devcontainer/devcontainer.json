@@ -4,7 +4,7 @@
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
-  "onCreateCommand": "wget https://download.visualstudio.microsoft.com/download/pr/85bcc525-4e9c-471e-9c1d-96259aa1a315/930833ef34f66fe9ee2643b0ba21621a/dotnet-sdk-8.0.201-linux-x64.tar.gz -O $HOME/dotnet.tar.gz && export DOTNET_ROOT=$HOME/.dotnet && mkdir -p \"$DOTNET_ROOT\" && tar zxf $HOME/dotnet.tar.gz -C \"$DOTNET_ROOT\" && export PATH=$DOTNET_ROOT:$DOTNET_ROOT/tools:$PATH && dotnet dev-certs https --trust",
+  "onCreateCommand": "wget https://download.visualstudio.microsoft.com/download/pr/656a3402-6889-400f-927f-7f956856e58b/93750973d6eedd17c6d963658e7ec214/dotnet-sdk-8.0.203-linux-x64.tar.gz -O $HOME/dotnet.tar.gz && export DOTNET_ROOT=$HOME/.dotnet && mkdir -p \"$DOTNET_ROOT\" && tar zxf $HOME/dotnet.tar.gz -C \"$DOTNET_ROOT\" && export PATH=$DOTNET_ROOT:$DOTNET_ROOT/tools:$PATH && dotnet dev-certs https --trust",
   "customizations": {
     "codespaces": {
       "openFiles": [
