@@ -4,7 +4,7 @@
     "cpus": 4
   },
   "waitFor": "onCreateCommand",
-  "onCreateCommand": "wget https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-8.0.410-linux-x64-binaries -O $HOME/dotnet.tar.gz && export DOTNET_ROOT=$HOME/.dotnet && mkdir -p \"$DOTNET_ROOT\" && tar zxf $HOME/dotnet.tar.gz -C \"$DOTNET_ROOT\" && export PATH=$DOTNET_ROOT:$DOTNET_ROOT/tools:$PATH && dotnet dev-certs https --trust",
+  "onCreateCommand": "wget https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.410/dotnet-sdk-8.0.410-linux-x64.tar.gz -O $HOME/dotnet.tar.gz && export DOTNET_ROOT=$HOME/.dotnet && mkdir -p \"$DOTNET_ROOT\" && tar zxf $HOME/dotnet.tar.gz -C \"$DOTNET_ROOT\" && export PATH=$DOTNET_ROOT:$DOTNET_ROOT/tools:$PATH && dotnet dev-certs https --trust",
   "customizations": {
     "codespaces": {
       "openFiles": [
