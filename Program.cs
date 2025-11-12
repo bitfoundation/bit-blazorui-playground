@@ -27,6 +27,7 @@ if (builder.Environment.IsDevelopment() is false)
 app.UseStaticFiles();
 app.UseAntiforgery();
 
+app.MapStaticAssets();
 app.MapRazorComponents<App>()
    .AddInteractiveServerRenderMode();
 
