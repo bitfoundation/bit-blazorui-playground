@@ -1,5 +1,4 @@
-﻿@page "/"
-@rendermode InteractiveServer
+@page "/"
 
 <PageTitle>Home</PageTitle>
 
@@ -20,7 +19,7 @@
         <BitText Typography="BitTypography.H3" Gutter>
             Counter
         </BitText>
-        <BitButton OnClick="() => _counter = 0" ButtonStyle="BitButtonStyle.Standard">Reset</BitButton>
+        <BitButton OnClick="() => _counter = 0" Variant="BitVariant.Outline">Reset</BitButton>
         <BitButton OnClick="() => _counter++">Increase [@_counter]</BitButton>
     </div>
  </div>
