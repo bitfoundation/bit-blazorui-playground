@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="en" bit-theme-system>
+<!DOCTYPE html>
+<html lang="en" bit-theme="dark" bit-theme-persist>
 
 <head>
     <base href="/" />
@@ -14,11 +14,11 @@
             height: 100%;
         }
     </style>
-    <HeadOutlet />
+    <HeadOutlet @rendermode="@InteractiveServer" />
 </head>
 
-<body class="@BitCss.Class.Color.Background.Primary @BitCss.Class.Color.Foreground.Primary">
-    <Routes />
+<body class="@BitCss.Class.Color.Background.Primary.Main @BitCss.Class.Color.Foreground.Primary.Main">
+    <Routes @rendermode="@InteractiveServer" />
     <script src="_framework/blazor.web.js"></script>
     <script src="_content/Bit.BlazorUI/scripts/bit.blazorui.js"></script>
 </body>
